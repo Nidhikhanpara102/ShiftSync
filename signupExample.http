@@ -2,11 +2,11 @@ curl -X POST \
   http://127.0.0.1:5000/signup \
   -H 'Content-Type: application/json' \
   -d '{
-    "firstName": "Nidhi",
-    "lastName": "Khanpara",
+    "firstName": "Jainam",
+    "lastName": "Doshi",
     "email": "NidhiKhanpara102@gmail.com",
     "age": 24,
     "address": "Waterloo",
-    "username": "KhanparaNidhi",
+    "username": "Doshijainam",
     "password": "1999"
   }'
