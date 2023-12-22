@@ -1,2 +1,2 @@
 curl -X GET \
-  'http://127.0.0.1:5000/login?username=Doshijainam&password=1999'
+  'http://127.0.0.1:5000/login?username=johndoe&password=password123'

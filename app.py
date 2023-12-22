@@ -20,7 +20,13 @@ def get_user_by_credentials(username, password):
     users_collection = db['Signup']
     return users_collection.find_one({'username': username, 'password': password})
 
-@app.route('/login', methods=['GET'])
+def link_user_to_availability(username, availability_id):
+    users_collection = db['Signup']
+    users_collection.update_one(
+        {'username': username},
+        {'$set': {'availability_id': availability_id}}
+    )
+
 def login_user():
     loginID = request.args.get('username')
     loginPassword = request.args.get('password')
@@ -31,49 +37,15 @@ def login_user():
     user = get_user_by_credentials(loginID, loginPassword)
 
     if user:
-        # Convert ObjectId to string in the response
-        user_data = {key: str(value) if key == '_id' else value for key, value in user.items()}
+        # Convert ObjectId to string for _id and availability_id fields in the response
+        user_data = {key: str(value) if key in ('_id', 'availability_id') else value for key, value in user.items()}
         return jsonify({'message': 'Login successful', 'user_data': user_data})
     else:
         return jsonify({'error': 'Invalid username or password'})
 
-
-@app.route('/availabilities', methods=['POST'])
-def add_availability():
-    data = request.json
-
-    Monday = data.get('Monday')
-    Tuesday = data.get('Tuesday')
-    Wednesday = data.get('Wednesday')
-    Thursday = data.get('Thursday')
-    Friday = data.get('Friday')
-    Saturday = data.get('Saturday')
-    Sunday = data.get('Sunday')
-
-    if not Monday or not Tuesday or not Wednesday or not Thursday or not Friday or not Saturday or not Sunday:
-        return jsonify({'error': 'Missing Fields, Check Availabilities!'})
-
-    user_collection = db['Availabilities']
-
-    availabilities_data = {
-        'Monday': Monday,
-        'Tuesday': Tuesday,
-        'Wednesday': Wednesday,
-        'Thursday': Thursday,
-        'Friday': Friday,
-        'Saturday': Saturday,
-        'Sunday': Sunday,
-    }
-
-    try:
-        result = user_collection.insert_one(availabilities_data)
-        if result:
-            return jsonify({'message': 'User availability added to the database successfully'})
-        else:
-            return jsonify({'error': 'Failed to add user availability.'})
-    except Exception as e:
-        print(f'Error: {e}')
-        return jsonify({'error': f'Failed to add user availability. {str(e)}'})
+@app.route('/login', methods=['GET'])  # Add this line to associate the route with the function
+def login_route():
+    return login_user()
 
 @app.route('/signup', methods=['POST'])
 def add_user():
@@ -87,15 +59,21 @@ def add_user():
     username = data.get('username')
     password = data.get('password')
 
+    Monday = data.get('Monday')
+    Tuesday = data.get('Tuesday')
+    Wednesday = data.get('Wednesday')
+    Thursday = data.get('Thursday')
+    Friday = data.get('Friday')
+    Saturday = data.get('Saturday')
+    Sunday = data.get('Sunday')
+
     if not firstName or not lastName or not email or not age or not address or not username or not password:
         return jsonify({'error': 'Missing Fields!'})
 
     users_collection = db['Signup']
-
-    user_id = get_next_user_id()
+    availabilities_collection = db['Availabilities']
 
     user_data = {
-        'user_id': user_id,
         'firstName': firstName,
         'lastName': lastName,
         'email': email,
@@ -105,17 +83,41 @@ def add_user():
         'password': password
     }
 
+    availabilities_data = {
+        'Monday': Monday,
+        'Tuesday': Tuesday,
+        'Wednesday': Wednesday,
+        'Thursday': Thursday,
+        'Friday': Friday,
+        'Saturday': Saturday,
+        'Sunday': Sunday,
+    }
+
     try:
-        result = users_collection.insert_one(user_data)
-        if result.inserted_id:
-            # Exclude '_id' field from the response
-            response_data = {key: value for key, value in user_data.items() if key != '_id'}
-            return jsonify({'message': 'User added to the database successfully', 'user_data': response_data})
+        # Insert user data
+        result_user = users_collection.insert_one(user_data)
+        
+        # Insert availability data
+        result_availability = availabilities_collection.insert_one(availabilities_data)
+
+        if result_user.inserted_id and result_availability.inserted_id:
+            # Link user to availability
+            link_user_to_availability(username, result_availability.inserted_id)
+
+            # Exclude '_id' and 'availability_id' fields from the response
+            response_user_data = {key: value for key, value in user_data.items() if key != '_id'}
+            response_availability_data = {key: value for key, value in availabilities_data.items() if key != '_id'}
+
+            return jsonify({
+                'message': 'User and availability added to the database successfully',
+                'user_data': response_user_data,
+                'availability_data': response_availability_data
+            })
         else:
-            return jsonify({'error': 'Failed to add user. Inserted ID not returned.'})
+            return jsonify({'error': 'Failed to add user or availability. Inserted ID not returned.'})
     except Exception as e:
         print(f'Error: {e}')  
-        return jsonify({'error': f'Failed to add user. {str(e)}'})
+        return jsonify({'error': f'Failed to add user or availability. {str(e)}'})
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
