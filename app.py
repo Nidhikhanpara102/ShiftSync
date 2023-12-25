@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from pymongo import MongoClient
-from bson import ObjectId  # Import ObjectId
+from bson import ObjectId  
 
 app = Flask(__name__)
 client = MongoClient('mongodb://localhost:27017/')  
@@ -14,7 +14,7 @@ def get_next_user_id():
         upsert=True,
         return_document=True
     )
-    return str(counter_doc['_id'])  # Convert ObjectId to string
+    return str(counter_doc['_id'])  
 
 def get_user_by_credentials(username, password):
     users_collection = db['Signup']
@@ -37,13 +37,29 @@ def login_user():
     user = get_user_by_credentials(loginID, loginPassword)
 
     if user:
-        # Convert ObjectId to string for _id and availability_id fields in the response
         user_data = {key: str(value) if key in ('_id', 'availability_id') else value for key, value in user.items()}
         return jsonify({'message': 'Login successful', 'user_data': user_data})
     else:
         return jsonify({'error': 'Invalid username or password'})
 
-@app.route('/login', methods=['GET'])  # Add this line to associate the route with the function
+@app.route('/listEmployee', methods=['GET'])
+def getEmployee():
+    employeeCollection = db['Signup']
+    employees = employeeCollection.find()
+    
+    employeeList = []
+
+    for employee in employees:
+        employee_data = {
+            'First Name': employee['firstName'],
+            'Last Name': employee['lastName'],
+            'Email': employee['email']
+        }
+        employeeList.append(employee_data)
+
+    return jsonify({'employees': employeeList})
+
+@app.route('/login', methods=['GET'])  
 def login_route():
     return login_user()
 
