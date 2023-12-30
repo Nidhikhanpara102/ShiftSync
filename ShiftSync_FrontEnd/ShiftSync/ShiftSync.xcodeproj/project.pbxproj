@@ -1,0 +1,697 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D50E6C342B38DB4100E9B26C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50E6C332B38DB4100E9B26C /* LoginViewController.swift */; };
+		D50E6C362B38DFCC00E9B26C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50E6C352B38DFCC00E9B26C /* Extensions.swift */; };
+		D50E6C392B38EE8300E9B26C /* UiViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50E6C382B38EE8300E9B26C /* UiViewController + Extension.swift */; };
+		D50E6C3B2B38EED700E9B26C /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50E6C3A2B38EED700E9B26C /* Enums.swift */; };
+		D50E6C3D2B38F72F00E9B26C /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50E6C3C2B38F72F00E9B26C /* Toast.swift */; };
+		D516BDD22B3507F300F354A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516BDD12B3507F300F354A9 /* AppDelegate.swift */; };
+		D516BDD42B3507F300F354A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516BDD32B3507F300F354A9 /* SceneDelegate.swift */; };
+		D516BDD62B3507F300F354A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516BDD52B3507F300F354A9 /* ViewController.swift */; };
+		D516BDD92B3507F300F354A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D516BDD72B3507F300F354A9 /* Main.storyboard */; };
+		D516BDDC2B3507F300F354A9 /* ShiftSync.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D516BDDA2B3507F300F354A9 /* ShiftSync.xcdatamodeld */; };
+		D516BDDE2B3507F400F354A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D516BDDD2B3507F400F354A9 /* Assets.xcassets */; };
+		D516BDE12B3507F400F354A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D516BDDF2B3507F400F354A9 /* LaunchScreen.storyboard */; };
+		D516BDEC2B3507F400F354A9 /* ShiftSyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516BDEB2B3507F400F354A9 /* ShiftSyncTests.swift */; };
+		D516BDF62B3507F400F354A9 /* ShiftSyncUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516BDF52B3507F400F354A9 /* ShiftSyncUITests.swift */; };
+		D516BDF82B3507F400F354A9 /* ShiftSyncUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516BDF72B3507F400F354A9 /* ShiftSyncUITestsLaunchTests.swift */; };
+		D516BE052B350B1C00F354A9 /* SignUpDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516BE042B350B1C00F354A9 /* SignUpDataModel.swift */; };
+		D516BE072B3517B200F354A9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516BE062B3517B200F354A9 /* SignUpViewController.swift */; };
+		D516BE0C2B351C8100F354A9 /* LoginDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516BE0B2B351C8100F354A9 /* LoginDataModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D516BDE82B3507F400F354A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D516BDC62B3507F300F354A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D516BDCD2B3507F300F354A9;
+			remoteInfo = ShiftSync;
+		};
+		D516BDF22B3507F400F354A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D516BDC62B3507F300F354A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D516BDCD2B3507F300F354A9;
+			remoteInfo = ShiftSync;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D50E6C332B38DB4100E9B26C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ShiftSync/Controller/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
+		D50E6C352B38DFCC00E9B26C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D50E6C382B38EE8300E9B26C /* UiViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiViewController + Extension.swift"; sourceTree = "<group>"; };
+		D50E6C3A2B38EED700E9B26C /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		D50E6C3C2B38F72F00E9B26C /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		D516BDCE2B3507F300F354A9 /* ShiftSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShiftSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D516BDD12B3507F300F354A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D516BDD32B3507F300F354A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D516BDD52B3507F300F354A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D516BDD82B3507F300F354A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D516BDDB2B3507F300F354A9 /* ShiftSync.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShiftSync.xcdatamodel; sourceTree = "<group>"; };
+		D516BDDD2B3507F400F354A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D516BDE02B3507F400F354A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D516BDE22B3507F400F354A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D516BDE72B3507F400F354A9 /* ShiftSyncTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShiftSyncTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D516BDEB2B3507F400F354A9 /* ShiftSyncTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftSyncTests.swift; sourceTree = "<group>"; };
+		D516BDF12B3507F400F354A9 /* ShiftSyncUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShiftSyncUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D516BDF52B3507F400F354A9 /* ShiftSyncUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftSyncUITests.swift; sourceTree = "<group>"; };
+		D516BDF72B3507F400F354A9 /* ShiftSyncUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftSyncUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D516BE042B350B1C00F354A9 /* SignUpDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpDataModel.swift; sourceTree = "<group>"; };
+		D516BE062B3517B200F354A9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		D516BE0B2B351C8100F354A9 /* LoginDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D516BDCB2B3507F300F354A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D516BDE42B3507F400F354A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D516BDEE2B3507F400F354A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D50E6C372B38DFDF00E9B26C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D50E6C352B38DFCC00E9B26C /* Extensions.swift */,
+				D50E6C382B38EE8300E9B26C /* UiViewController + Extension.swift */,
+				D50E6C3A2B38EED700E9B26C /* Enums.swift */,
+				D50E6C3C2B38F72F00E9B26C /* Toast.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D516BDC52B3507F300F354A9 = {
+			isa = PBXGroup;
+			children = (
+				D516BDD02B3507F300F354A9 /* ShiftSync */,
+				D516BDEA2B3507F400F354A9 /* ShiftSyncTests */,
+				D516BDF42B3507F400F354A9 /* ShiftSyncUITests */,
+				D516BDCF2B3507F300F354A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D516BDCF2B3507F300F354A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D516BDCE2B3507F300F354A9 /* ShiftSync.app */,
+				D516BDE72B3507F400F354A9 /* ShiftSyncTests.xctest */,
+				D516BDF12B3507F400F354A9 /* ShiftSyncUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D516BDD02B3507F300F354A9 /* ShiftSync */ = {
+			isa = PBXGroup;
+			children = (
+				D516BDD12B3507F300F354A9 /* AppDelegate.swift */,
+				D516BDD32B3507F300F354A9 /* SceneDelegate.swift */,
+				D50E6C372B38DFDF00E9B26C /* Extensions */,
+				D516BE082B3517FD00F354A9 /* Controller */,
+				D516BE092B35180B00F354A9 /* Models */,
+				D516BE0A2B35181700F354A9 /* StoryBoards */,
+				D516BE0D2B3525D500F354A9 /* Utils */,
+				D516BDDF2B3507F400F354A9 /* LaunchScreen.storyboard */,
+				D516BDE22B3507F400F354A9 /* Info.plist */,
+				D516BDDA2B3507F300F354A9 /* ShiftSync.xcdatamodeld */,
+			);
+			path = ShiftSync;
+			sourceTree = "<group>";
+		};
+		D516BDEA2B3507F400F354A9 /* ShiftSyncTests */ = {
+			isa = PBXGroup;
+			children = (
+				D516BDEB2B3507F400F354A9 /* ShiftSyncTests.swift */,
+			);
+			path = ShiftSyncTests;
+			sourceTree = "<group>";
+		};
+		D516BDF42B3507F400F354A9 /* ShiftSyncUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D516BDF52B3507F400F354A9 /* ShiftSyncUITests.swift */,
+				D516BDF72B3507F400F354A9 /* ShiftSyncUITestsLaunchTests.swift */,
+			);
+			path = ShiftSyncUITests;
+			sourceTree = "<group>";
+		};
+		D516BE082B3517FD00F354A9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D516BDD52B3507F300F354A9 /* ViewController.swift */,
+				D50E6C332B38DB4100E9B26C /* LoginViewController.swift */,
+				D516BE062B3517B200F354A9 /* SignUpViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D516BE092B35180B00F354A9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D516BE042B350B1C00F354A9 /* SignUpDataModel.swift */,
+				D516BE0B2B351C8100F354A9 /* LoginDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D516BE0A2B35181700F354A9 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				D516BDD72B3507F300F354A9 /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		D516BE0D2B3525D500F354A9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D516BDDD2B3507F400F354A9 /* Assets.xcassets */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D516BDCD2B3507F300F354A9 /* ShiftSync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D516BDFB2B3507F400F354A9 /* Build configuration list for PBXNativeTarget "ShiftSync" */;
+			buildPhases = (
+				D516BDCA2B3507F300F354A9 /* Sources */,
+				D516BDCB2B3507F300F354A9 /* Frameworks */,
+				D516BDCC2B3507F300F354A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShiftSync;
+			productName = ShiftSync;
+			productReference = D516BDCE2B3507F300F354A9 /* ShiftSync.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D516BDE62B3507F400F354A9 /* ShiftSyncTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D516BDFE2B3507F400F354A9 /* Build configuration list for PBXNativeTarget "ShiftSyncTests" */;
+			buildPhases = (
+				D516BDE32B3507F400F354A9 /* Sources */,
+				D516BDE42B3507F400F354A9 /* Frameworks */,
+				D516BDE52B3507F400F354A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D516BDE92B3507F400F354A9 /* PBXTargetDependency */,
+			);
+			name = ShiftSyncTests;
+			productName = ShiftSyncTests;
+			productReference = D516BDE72B3507F400F354A9 /* ShiftSyncTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D516BDF02B3507F400F354A9 /* ShiftSyncUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D516BE012B3507F400F354A9 /* Build configuration list for PBXNativeTarget "ShiftSyncUITests" */;
+			buildPhases = (
+				D516BDED2B3507F400F354A9 /* Sources */,
+				D516BDEE2B3507F400F354A9 /* Frameworks */,
+				D516BDEF2B3507F400F354A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D516BDF32B3507F400F354A9 /* PBXTargetDependency */,
+			);
+			name = ShiftSyncUITests;
+			productName = ShiftSyncUITests;
+			productReference = D516BDF12B3507F400F354A9 /* ShiftSyncUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D516BDC62B3507F300F354A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					D516BDCD2B3507F300F354A9 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					D516BDE62B3507F400F354A9 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = D516BDCD2B3507F300F354A9;
+					};
+					D516BDF02B3507F400F354A9 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = D516BDCD2B3507F300F354A9;
+					};
+				};
+			};
+			buildConfigurationList = D516BDC92B3507F300F354A9 /* Build configuration list for PBXProject "ShiftSync" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D516BDC52B3507F300F354A9;
+			productRefGroup = D516BDCF2B3507F300F354A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D516BDCD2B3507F300F354A9 /* ShiftSync */,
+				D516BDE62B3507F400F354A9 /* ShiftSyncTests */,
+				D516BDF02B3507F400F354A9 /* ShiftSyncUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D516BDCC2B3507F300F354A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D516BDE12B3507F400F354A9 /* LaunchScreen.storyboard in Resources */,
+				D516BDDE2B3507F400F354A9 /* Assets.xcassets in Resources */,
+				D516BDD92B3507F300F354A9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D516BDE52B3507F400F354A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D516BDEF2B3507F400F354A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D516BDCA2B3507F300F354A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D516BE072B3517B200F354A9 /* SignUpViewController.swift in Sources */,
+				D50E6C3D2B38F72F00E9B26C /* Toast.swift in Sources */,
+				D50E6C362B38DFCC00E9B26C /* Extensions.swift in Sources */,
+				D516BDD62B3507F300F354A9 /* ViewController.swift in Sources */,
+				D516BDDC2B3507F300F354A9 /* ShiftSync.xcdatamodeld in Sources */,
+				D516BE0C2B351C8100F354A9 /* LoginDataModel.swift in Sources */,
+				D50E6C342B38DB4100E9B26C /* LoginViewController.swift in Sources */,
+				D50E6C392B38EE8300E9B26C /* UiViewController + Extension.swift in Sources */,
+				D516BDD22B3507F300F354A9 /* AppDelegate.swift in Sources */,
+				D516BDD42B3507F300F354A9 /* SceneDelegate.swift in Sources */,
+				D516BE052B350B1C00F354A9 /* SignUpDataModel.swift in Sources */,
+				D50E6C3B2B38EED700E9B26C /* Enums.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D516BDE32B3507F400F354A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D516BDEC2B3507F400F354A9 /* ShiftSyncTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D516BDED2B3507F400F354A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D516BDF82B3507F400F354A9 /* ShiftSyncUITestsLaunchTests.swift in Sources */,
+				D516BDF62B3507F400F354A9 /* ShiftSyncUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D516BDE92B3507F400F354A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D516BDCD2B3507F300F354A9 /* ShiftSync */;
+			targetProxy = D516BDE82B3507F400F354A9 /* PBXContainerItemProxy */;
+		};
+		D516BDF32B3507F400F354A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D516BDCD2B3507F300F354A9 /* ShiftSync */;
+			targetProxy = D516BDF22B3507F400F354A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D516BDD72B3507F300F354A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D516BDD82B3507F300F354A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D516BDDF2B3507F400F354A9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D516BDE02B3507F400F354A9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D516BDF92B3507F400F354A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D516BDFA2B3507F400F354A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D516BDFC2B3507F400F354A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShiftSync/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShiftSync;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NidhiKhanpara.ShiftSync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D516BDFD2B3507F400F354A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShiftSync/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShiftSync;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NidhiKhanpara.ShiftSync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D516BDFF2B3507F400F354A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NidhiKhanpara.ShiftSyncTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShiftSync.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ShiftSync";
+			};
+			name = Debug;
+		};
+		D516BE002B3507F400F354A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NidhiKhanpara.ShiftSyncTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShiftSync.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ShiftSync";
+			};
+			name = Release;
+		};
+		D516BE022B3507F400F354A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NidhiKhanpara.ShiftSyncUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShiftSync;
+			};
+			name = Debug;
+		};
+		D516BE032B3507F400F354A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NidhiKhanpara.ShiftSyncUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShiftSync;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D516BDC92B3507F300F354A9 /* Build configuration list for PBXProject "ShiftSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D516BDF92B3507F400F354A9 /* Debug */,
+				D516BDFA2B3507F400F354A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D516BDFB2B3507F400F354A9 /* Build configuration list for PBXNativeTarget "ShiftSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D516BDFC2B3507F400F354A9 /* Debug */,
+				D516BDFD2B3507F400F354A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D516BDFE2B3507F400F354A9 /* Build configuration list for PBXNativeTarget "ShiftSyncTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D516BDFF2B3507F400F354A9 /* Debug */,
+				D516BE002B3507F400F354A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D516BE012B3507F400F354A9 /* Build configuration list for PBXNativeTarget "ShiftSyncUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D516BE022B3507F400F354A9 /* Debug */,
+				D516BE032B3507F400F354A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D516BDDA2B3507F300F354A9 /* ShiftSync.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D516BDDB2B3507F300F354A9 /* ShiftSync.xcdatamodel */,
+			);
+			currentVersion = D516BDDB2B3507F300F354A9 /* ShiftSync.xcdatamodel */;
+			path = ShiftSync.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D516BDC62B3507F300F354A9 /* Project object */;
+}
